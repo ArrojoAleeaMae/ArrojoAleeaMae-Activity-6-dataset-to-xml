@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE properties-and-classes [
+	<!ELEMENT properties-and-classes (vocabulary)>
+	<!ELEMENT vocabulary (URI, description, semantics, other-info)>
+	<!ELEMENT other-info (created, Markdown, plural, ETag, userdocs, notes)>
+
+	<!ELEMENT vocabulary (#PCDATA)>
+	<!ELEMENT URI (#PCDATA)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT semantics (#PCDATA)>
+	<!ELEMENT other-info (#PCDATA)>
+	<!ELEMENT created (#PCDATA)>
+	<!ELEMENT Markdown (#PCDATA)>
+	<!ELEMENT plural (#PCDATA)>
+	<!ELEMENT ETag (#PCDATA)>
+	<!ELEMENT userdocs (#PCDATA)>
+	<!ELEMENT notes (#PCDATA)>
+
+	<!ATTLIST vocabulary terms CDATA #REQUIRED>
+
+
+]>
+
+<properties-and-classes>
+	<vocabulary terms="Account Identifier">
+		<URI>https://open.vocab.org/terms/accountIdentifier</URI>
+		<description>foaf:OnlineAccount's can have an accountName, but plenty of services use an account identifier internally that is not the same as the public account name: for instance, Twitter uses a nickname and a user_id property. Facebook now assigns usernames as well as internal identification numbers. Google's various services assign a unique identifier so that people are not revealing their e-mail address or username. This property is for these kind of identifiers.</description>
+		<semantics>Having this property implies being a foaf:OnlineAccount.</semantics>
+		<other-info>
+			<created>2010-07-03T19:17:39Z</created>
+			<plural>Account Identifiers[en]</plural>
+			<userdocs>msg0:accountIdentifier</userdocs>
+			<notes>msg1:2a9f5971d34c6f031f26509e9c90eecc</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Amateur Radio Operator">
+		<URI>http://open.vocab.org/terms/AmateurRadioOperator</URI>
+		<description>A person who is licensed in at least one ITU region to operate (transmit and receive) a radio using frequencies and modes permitted only to licensed persons.</description>
+		<semantics>Being a member of this class implies also being a member of foaf:Person.</semantics>
+		<other-info>
+			<created>2010-06-25T16:45:26Z</created>
+			<plural>Amateur Radio Operators[en]</plural>
+			<userdocs>msg3:AmateurRadioOperator</userdocs>
+			<notes>msg4:2830e3b461e81fa2d2b16a950c926587m
+				msg5:33885d5ab715f2e23586a7c058b077e7</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Biological Database">
+		<URI> http://open.vocab.org/terms/BiologicalDatabase</URI>
+		<description>Database for Biologists (Bioinformatics)</description>
+		<semantics>Being a member of this class implies also being a member of Scientific Database.</semantics>
+		<other-info>
+			<markdown>A Database for Biologists (Bioinformatics)[en]</markdown>
+			<plural>Biological Databases[en]</plural>
+			<ETag>"40782fae-0f4c-44d7-aa93-d14b7fd2b04a"</ETag>
+			<userdocs>Http://open.vocab.org/terms/BiologicalDatabase.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Business Card">
+		<URI> http://open.vocab.org/terms/businessCard</URI>
+		<description>A business card associated with this resource.</description>
+		<semantics>Every value of this property is a vcard:VCard. It is equivalent to hcard:hasCard.</semantics>
+		<other-info>
+			<plural>Business Cards[en]</plural>
+			<ETag>b7eaec45-5c0e-4ae8-b880-131b4ee9129d</ETag>
+			<userdocs>Http://open.vocab.org/docs/</userdocs>
+			<notes>msg21:0a8d6d27db41d0a297e67d0da3f0c45b
+			msg22:4d316062a929a47b0313fddaa68084b5</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Calendar">
+		<URI> http://open.vocab.org/terms/calendar</URI>
+		<description>A calendar associated with this resource.</description>
+		<other-info>
+			<markdown>X8MZrJ "http://lsxkhoxxsuwb.com/ lsxkhoxxsuw, [url=http://aswturqaprud.com/]aswturqaprud[/url], [link=http://yxtryhogdakn.com/]yxtryhogdakn[/link], http://rasuuqixgaff.com/[en]</markdown>
+			<plural>Calendars[en]</plural>
+			<ETag>bc1bcb98-0116-46e1-8073-dd3e5579a70a</ETag>
+			<userdocs>Http://open.vocab.org/docs/</userdocs>
+			<notes>msg23:696e85da9edec64d68eba889bd8c6707</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Class Skeleton">
+		<URI>http://open.vocab.org/terms/classSkeleton</URI>
+		<description>Relates class to a class skeleton. If class has more than one of this relations, it should use them all.</description>
+		<semantics>Having this property implies being a rdfs:Class. Every value of this property is a Class Skeleton. It is a sub-property of Class Skeleton Ignore.</semantics>
+		<other-info>
+			<created>2010-04-13T18:40:41Z</created>
+			<plural>class skeletons[en]</plural>
+			<userdocs>msg24:classSkeleton</userdocs>
+			<notes>msg25:6ba88e47491c248085e4228f37e1be3c</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Distance Point">
+		<URI>http://open.vocab.org/terms/distancePoint</URI>
+		<description>A location from which a distance is measured. (A distance measurement will have two points, and a distance measurement value).</description>
+		<semantics>Having this property implies being a Distance. Every value of this property is a geo:SpatialThing.</semantics>
+		<other-info>
+			<plural>Distance Points[en]</plural>
+			<ETag>0dfaa487-6c26-49ed-b2a3-f44024963385</ETag>
+			<userdocs>Http://open.vocab.org/docs/</userdocs>
+			<notes>	msg60:3e3c05672cdb096f869c7f1d5dbffa53 msg61:fbbe2c3b9f9f6ca9da408358476dbaec</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Earworm song">
+		<URI>http://open.vocab.org/terms/earwormSong</URI>
+		<description>The song that is the focus of a particular earworm</description>
+		<semantics>This property is functional. Having this property implies being an Earworm. Every value of this property is a mo:MusicalWork. It is the inverse of Is Song of Earworm</semantics>
+		<other-info>
+			<plural>Earworm Songs[en]</plural>
+			<ETag>"bae2faae-baf8-4a4b-9e5d-0d4d644d8e8f"</ETag>
+			<userdocs>Http://open.vocab.org/terms/earwormSong.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Edit Form">
+		<URI>http://open.vocab.org/terms/editForm</URI>
+		<description>Associates a resource with a form that can be used to edit its description. See http://patterns.dataincubator.org/book/edit-trail.html for more information.</description>
+		<semantics>Every value of this property is a foaf:Document.</semantics>
+		<other-info>
+			<created>2010-07-30T15:09:08Z</created>
+			<plural>Edit Forms[en]</plural>
+			<userdocs>msg62:editForm</userdocs>
+			<notes>msg63:c3e7659038285b49febf4eec5a55115c</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="First Sentence">
+		<URI> http://open.vocab.org/terms/firstSentence</URI>
+		<description>The first sentence of a resource.</description>
+		<semantics>Every value of this property is a rdfs:Literal.</semantics>
+		<other-info>
+			<plural>First Sentences[en]</plural>
+			<ETag>"d0c054eb-1301-4435-b0e9-c26543ceea6d"</ETag>
+			<userdocs>Http://open.vocab.org/terms/firstSentence.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Formal Name">
+		<URI>http://open.vocab.org/terms/formalName</URI>
+		<description>The name used when referred to in formal situations, e.g. Mr. Davis</description>
+		<semantics>It is a sub-property of Name.</semantics>
+		<other-info>
+			<plural>Formal Names[en]</plural>
+			<ETag>"d6ea7b0b-ee99-4220-b060-38293560747c"</ETag>
+			<userdocs>Http://open.vocab.org/terms/formalName.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Hearts">
+		<URI>http://open.vocab.org/terms/hearts</URI>
+		<description>Slang for loves.</description>
+		<semantics>Having this property implies being a foaf:Agent. Every value of this property is an owl:Thing.</semantics>
+		<other-info>
+			<plural>Hearts[en]</plural>
+			<ETag>"d8b21121-64c8-429d-a07e-fbcb39d22ff4"</ETag>
+			<userdocs>Http://open.vocab.org/terms/hearts.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="House">
+		<URI>http://open.vocab.org/terms/House</URI>
+		<description>Structure in which someone lives</description>
+		<semantics>Being a member of this class implies also being a member of ov:building. No member of this class can also be a member of ov:horse. Having HouseColor implies being a member of this class. It is equivalent to ov:domicile.</semantics>
+		<other-info>
+			<markdown>This is just a test[en]</markdown>
+			<plural>Houses[en]</plural>
+			<ETag>"ff550d4a-c1ac-4b1c-99b3-6f06a66c77b9"</ETag>
+			<userdocs>Http://open.vocab.org/terms/House.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Icon">
+		<URI>http://open.vocab.org/terms/icon</URI>
+		<description>a pictorial representation for something.</description>
+		<semantics>Every value of this property is a foaf:Image.</semantics>
+		<other-info>
+			<created>2010-11-13T17:10:32Z</created>
+			<plural>Icons[en]</plural>
+			<userdocs>msg83:icon</userdocs>
+			<notes>msg84:11b99e13946186a32dd147da150437c9</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Illegal RDF/XML Statement">
+		<URI>http://open.vocab.org/terms/IllegalRDFXMLStatement</URI>
+		<description>A statement that would be illegal to express in a non-reified form in RDF/XML - usually because the predicate cannot be converted to a QName.</description>
+		<semantics>Being a member of this class implies also being a member of rdf:Statement.</semantics>
+		<other-info>
+			<markdown>For example: [] rdf:type openvocab:IllegalRDFXMLStatement ; rdf:subject //example.com/some_competition> ; rdf:predicate //example.com/prizes/1> ; rdf:object //example.com/some_person> . Tools *may* automatically convert between openvocab:IllegalRDFXMLStatement statements and unreified statements when parsing or serialising RDF/XML.[en]</markdown>
+			<plural>Illegal RDF/XML Statements[en]</plural>
+			<ETag>"55f19a46-1987-4752-b7c7-92a45ae19046"</ETag>
+			<userdocs>Http://open.vocab.org/terms/IllegalRDFXMLStatement.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Killer Gorilla">
+		<URI>http://open.vocab.org/terms/KillerGorilla</URI>
+		<description>A gorilla that kills or has the inclination to do so.</description>
+		<semantics>Being a member of this class implies also being a member of umbel:Gorilla. No member of this class can also be a member of Non Killer-Gorilla.</semantics>
+		<other-info>
+			<plural>Killer Gorillas[en]</plural>
+			<ETag>Killer Gorillas[en]</ETag>
+			<userdocs>Killer Gorillas[en]</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Kilometres">
+		<URI>http://open.vocab.org/terms/kilometres</URI>
+		<description>The number of kilometres of a distance measurement.</description>
+		<semantics>Every value of this property is a xsd:decimal.</semantics>
+		<other-info>
+			<created>2011-08-19T07:40:06Z</created>
+			<ETag>msg90:kilometres</ETag>
+			<notes>msg91:8081494b4d05ee944f76ce88e2e43f02</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Living Killer Gorilla">
+		<URI>http://open.vocab.org/terms/StillAKillerGorilla</URI>
+		<description>Indicates that the subject is a non-deceased killer gorilla.</description>
+		<semantics>Being a member of this class implies also being a member of Killer Gorilla. No member of this class can also be a member of Non Killer-Gorilla.</semantics>
+		<other-info>
+			<markdown>Zombie killer gorillas are an edge case. It is hoped that we'll be able to decide how they are modelled once we gain more experience in this area.[en]</markdown>
+			<plural>Living Killer Gorillas[en]</plural>
+			<ETag>"b8d9a0b9-e2be-4502-a418-2ade8533805b"</ETag>
+			<userdocs>Http://open.vocab.org/terms/StillAKillerGorilla.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Maiden Name">
+		<URI>http://open.vocab.org/terms/maidenName</URI>
+		<description>A person's maiden name.</description>
+		<semantics>Having this property implies being a foaf:Person. Every value of this property is a rdfs:Literal.</semantics>
+		<other-info>
+			<created>2010-11-29T21:48:32Z</created>
+			<plural>Maiden Names[en]</plural>
+			<userdocs>msg100:maidenName</userdocs>
+			<notes>msg101:499c8f64bc910793ce4fffce765146f5http://open.vocab.org/terms/MicroblogPost</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="MicroblogPost">
+		<URI>http://open.vocab.org/terms/MicroblogPost</URI>
+		<description>A post on a microblogging service like Twitter, identi.ca, Jaiku or FriendFeed. Usually untitled and with a limited number of characters, and sometimes containing in-line text-based syntactical elements like at-replies, hashtags, group 'bangtags' etc.</description>
+		<semantics>It is equivalent to types:MicroblogPost.</semantics>
+		<other-info>
+			<plural>Microblog Post[en]</plural>
+			<ETag>"8607aed0-827c-4bda-b131-b4166b4c8af4"</ETag>
+			<userdocs>Http://open.vocab.org/terms/MicroblogPost.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Near">
+		<URI>http://open.vocab.org/terms/near</URI>
+		<description>x is 'near' y if they are near to each other in physical space, for a deliberately vague notion of near.</description>
+		<semantics>This property is symmetrical. Having this property implies being a geo:SpatialThing. Every value of this property is a geo:SpatialThing.</semantics>
+		<other-info>
+			<created>2010-08-09T14:20:53Z</created>
+			<userdocs>msg107:near</userdocs>
+			<notes>msg108:0fd4ca150be31d995a437d8c8e59dfd3</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Non Killer-Gorilla">
+		<URI>http://open.vocab.org/terms/NotAKillerGorilla</URI>
+		<description>Indicates that something is definitely not a Killer-Gorilla. (It may still be a killer though. Or a gorilla.)</description>
+		<semantics>Being a member of this class implies also being a member of owl:Thing. No member of this class can also be a member of Killer Gorilla.</semantics>
+		<other-info>
+			<plural>Non Killer-Gorillas[en]</plural>
+			<ETag>"5236de5a-f4e8-47d8-9f06-6f80b2b70df0"</ETag>
+			<userdocs>Http://open.vocab.org/terms/NotAKillerGorilla.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Plot">
+		<URI>http://open.vocab.org/terms/plot</URI>
+		<description>A plot of anything.</description>
+		<other-info>
+			<markdown>Example: a film's plot.[en]</markdown>
+			<plural>Plots[en]</plural>
+			<ETag>"bd674106-2f64-43d4-a80b-9a1aaac45c3c"</ETag>
+			<userdocs>Http://open.vocab.org/terms/plot.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="Semester">
+		<URI>http://open.vocab.org/terms/semester</URI>
+		<description>Semester in which the course is offered.</description>
+		<semantics>Having this property implies being a Course.</semantics>
+		<other-info>
+			<created>2011-06-23T09:56:11Z</created>
+			<userdocs>msg130:semester</userdocs>
+			<notes>msg131:a7a139149a01d64d8fd2e3c4b9bff9a3</notes>
+		</other-info>
+	</vocabulary>
+
+	<vocabulary terms="vocabulary">
+		<URI>http://open.vocab.org/terms/Vocabulary</URI>
+		<description>A set of terms or names, each one having an assigned meaning.</description>
+		<other-info>
+			<plural>vocabularies[en]</plural>
+			<ETag>"7b7177d8-ef11-4bb6-8eb1-21f77125592a"</ETag>
+			<userdocs>Http://open.vocab.org/terms/Vocabulary.html</userdocs>
+		</other-info>
+	</vocabulary>
+
+</properties-and-classes>
